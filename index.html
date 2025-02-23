@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Server Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Game Server Panel 🎮</h1>
+
+        <form id="serverForm">
+            <input type="text" id="name" placeholder="Server Name" required>
+            <input type="number" id="ram" placeholder="RAM (GB)" required>
+            <input type="number" id="disk" placeholder="Disk (GB)" required>
+            <select id="type">
+                <option value="Paper">Paper</option>
+                <option value="Spigot">Spigot</option>
+                <option value="Vanilla">Vanilla</option>
+            </select>
+            <button type="submit">Create Server</button>
+        </form>
+
+        <h2>Server List</h2>
+        <div id="serverList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
